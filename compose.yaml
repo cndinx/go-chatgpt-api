@@ -4,7 +4,7 @@ services:
     container_name: go-chatgpt-api
     image: linweiyuan/go-chatgpt-api
     ports:
-      - 8080:8080
+      - 18999:18999
     environment:
       - PORT=
       - TZ=Asia/Shanghai
