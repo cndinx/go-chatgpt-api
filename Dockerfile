@@ -1,8 +1,8 @@
 FROM golang:alpine AS builder
 WORKDIR /app
 COPY . .
-ENV http_proxy http://192.168.33.51:7890
-ENV https_proxy http://192.168.33.51:7890
+ENV http_proxy http://192.168.60.26:20172
+ENV https_proxy http://192.168.60.26:20172
 RUN go build -ldflags="-w -s" -o go-chatgpt-api main.go
 
 FROM alpine
