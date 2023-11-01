@@ -1,4 +1,4 @@
-FROM golang:alpine AS builder
+FROM golang:1.20-alpine AS builder
 WORKDIR /app
 COPY . .
 ENV http_proxy http://192.168.60.26:20172
