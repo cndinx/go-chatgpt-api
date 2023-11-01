@@ -6,9 +6,9 @@ services:
     container_name: go-chatgpt-api
     image: go-chatgpt-api
     ports:
-      - 18999:18999
+      - 18999:8080
     environment:
-      - PORT=18999
+      - PORT=8080
       - TZ=Asia/Shanghai
       - PROXY=http://192.168.33.51:7890
       - OPENAI_EMAIL=

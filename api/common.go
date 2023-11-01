@@ -168,6 +168,7 @@ func GetAccessToken(c *gin.Context) string {
 }
 
 func GetArkoseToken() (string, error) {
+	ProxyUrl = os.Getenv("PROXY")
 	return funcaptcha.GetOpenAIToken(PUID, ProxyUrl)
 }
 
